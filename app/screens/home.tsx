@@ -3,6 +3,7 @@ import { Div } from "../components/TailwindComponents";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Filter } from "../components/filter";
 import { Gal } from "../components/gal";
+import { Grid } from "../components/grid";
 export function Home() {
     const insets = useSafeAreaInsets();
     return (
@@ -14,6 +15,7 @@ export function Home() {
 
             <Div className="p-5">
                 <Gal />
+                <Grid/>
             </Div>
             <Menu />
         </Div>
