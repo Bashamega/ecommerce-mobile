@@ -3,7 +3,7 @@ import { Search } from "./search";
 
 export function Filter() {
     return (
-        <Div className=" bg-[#FFFBF5] absolute top-0 left-0 w-screen mb-5 px-5 pt-10">
+        <Div className=" bg-[#FFFBF5] w-screen mb-5 px-5 pt-10">
             <Div className="flex justify-evenly flex-row items-center ">
                 <Search />
                 <P>Icon</P>
