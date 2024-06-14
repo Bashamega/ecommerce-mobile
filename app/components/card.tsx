@@ -1,4 +1,5 @@
 import { Div, Img, P } from "./TailwindComponents";
+import { AntDesign } from '@expo/vector-icons';
 export function Card({ id }: { id: number }) {
     const isDivisibleBy4 = id % 4 === 0;
     const isDivisibleBy3 = id % 3 === 0;
@@ -20,7 +21,7 @@ export function Card({ id }: { id: number }) {
             <Div className="p-2">
                 <P className=" font-bold  text-[8px]">ZAGATTO Messenger</P>
                 <Div className="flex-row items-center">
-                    <P>Icon</P>
+                    <AntDesign name="star" size={8} color="#F69F21" />
                     <P className="text-[8px] text-[#F69F21]">4.7</P>
                 </Div>
                 <Div className=" flex-row justify-between">

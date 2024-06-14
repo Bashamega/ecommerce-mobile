@@ -17,7 +17,7 @@ export function Home() {
                 <Gal />
                 <Grid/>
             </Div>
-            <Menu />
+            <Menu active={1}/>
         </Div>
     )
 }
