@@ -1,5 +1,5 @@
-import { Div, Img, P } from "./TailwindComponents";
-import { AntDesign } from '@expo/vector-icons';
+import { Div, Icon, Img, P } from "./TailwindComponents";
+import { AntDesign} from '@expo/vector-icons';
 export function Card({ id }: { id: number }) {
     const isDivisibleBy4 = id % 4 === 0;
     const isDivisibleBy3 = id % 3 === 0;
@@ -16,8 +16,9 @@ export function Card({ id }: { id: number }) {
         imageSource = require('../../assets/clothes/1.jpeg'); // Fallback image if not divisible by 4, 3, or 2
     }
     return (
-        <Div key={id} className=" shadow rounded bg-white h-[200px]">
-            <Img source={imageSource} className="w-full h-1/2" />
+        <Div key={id} className=" w-2/5 bg-[#FFFBF5] relative shadow rounded-lg  h-[200px] border border-[#F69F21] ">
+            <Img source={imageSource} className="w-full h-1/2 rounded-lg" />
+            <Icon size={10} name="heart" className="text-[#F69F21] absolute top-[10px] right-[10px]" />
             <Div className="p-2">
                 <P className=" font-bold  text-[8px]">ZAGATTO Messenger</P>
                 <Div className="flex-row items-center">
@@ -25,8 +26,8 @@ export function Card({ id }: { id: number }) {
                     <P className="text-[8px] text-[#F69F21]">4.7</P>
                 </Div>
                 <Div className=" flex-row justify-between">
-                    <P className="font-bold">#5,000</P>
-
+                    <P className="font-bold text-[8px]">#5,000</P>
+                    <P className="text-[8px] text-white bg-[#F69F21] py-1 px-3 rounded-full">Add to cart</P>
                 </Div>
             </Div>
         </Div>
