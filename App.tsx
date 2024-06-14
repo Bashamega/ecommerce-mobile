@@ -16,7 +16,7 @@ export default function App(){
                 <Stack.Screen name='Details' component={Details}/>
                 <Stack.Screen name='Order Tracking' component={Tracking}/>
                 <Stack.Screen name='Add to cart' component={Cart}/>
-                <Stack.Screen name='Details' component={Payment}/>
+                <Stack.Screen name='Check out' component={Payment}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
