@@ -1,5 +1,5 @@
 import { Div, P } from "./TailwindComponents";
-import { Search } from "./search";
+import { Search } from "./Search";
 import { Ionicons } from '@expo/vector-icons';
 export function Filter() {
     return (

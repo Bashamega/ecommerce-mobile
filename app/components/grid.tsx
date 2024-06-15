@@ -1,5 +1,5 @@
 import { Div, Scroll } from "./TailwindComponents";
-import { Card } from "./card";
+import { Card } from "./Card";
 
 export function Grid({navigation}:{navigation:any}) {
     return (
