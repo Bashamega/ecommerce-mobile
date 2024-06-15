@@ -13,12 +13,12 @@ export function Favourite({ navigation }: { navigation: any }) {
         }}>
             <Scroll>
                 <Nav text="Favourite" navigation={navigation} />
-                <Div className=" p-10 pb-[50px]">
+                <Div className=" p-10 pb-[60px]">
                     <Item disabled={false} />
                     <Item disabled={false} />
                     <Item disabled={true} />
                     <Item disabled={false} />
-                    <Button title="Order Name" onPress={()=>{navigation?.navigate("cart")}}/>
+                    <Button title="Order Now" onPress={()=>{navigation?.navigate("cart")}}/>
                 </Div>
             </Scroll>
             <Menu navigation={navigation} active={2} />
