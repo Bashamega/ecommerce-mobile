@@ -1,8 +1,8 @@
 import { Div, Img, P, AntiIcon, FontIcon } from "./TailwindComponents"
-export function Item() {
+export function Item({disabled}:{disabled:boolean}) {
     return (
         <Div className="bg-white realtive rounded w-full p-5 flex-row gap-1">
-            <AntiIcon name="checksquare" size={30} className=" absolute top-[-15px] left-[-15px]" color="#F69F21" />
+            <AntiIcon name="checksquare" size={30} className=" absolute top-[-15px] left-[-15px]" color={disabled?"#CCCCCC":"#F69F21"} />
             <FontIcon name="trash" size={30} className=" absolute top-[-15px] right-[-15px]" color="#F69F21" />
             <Img source={require("../../assets/clothes/4.jpeg")} className=" rounded-lg w-1/4 h-full" />
             <Div>
