@@ -1,6 +1,6 @@
 import { Menu } from "../components/Menu";
 import { Nav } from "../components/Nav";
-import { Div } from "../components/TailwindComponents";
+import { Div, Scroll } from "../components/TailwindComponents";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Item } from "../components/Item";
 export function Favourite({ navigation }: { navigation: any }) {
@@ -10,13 +10,15 @@ export function Favourite({ navigation }: { navigation: any }) {
             paddingTop: insets.top,
             paddingBottom: insets.bottom,
         }}>
-            <Nav text="Favourite" navigation={navigation} />
-            <Div className=" p-10">
-                <Item disabled={false} />
-                <Item disabled={false} />
-                <Item disabled={true} />
-                <Item disabled={false} />
-            </Div>
+            <Scroll>
+                <Nav text="Favourite" navigation={navigation} />
+                <Div className=" p-10">
+                    <Item disabled={false} />
+                    <Item disabled={false} />
+                    <Item disabled={true} />
+                    <Item disabled={false} />
+                </Div>
+            </Scroll>
             <Menu navigation={navigation} active={2} />
         </Div>
     )
