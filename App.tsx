@@ -6,6 +6,7 @@ import { Details } from './app/screens/details';
 import { Tracking } from './app/screens/tracking';
 import { Cart } from './app/screens/cart';
 import { Payment } from './app/screens/payment';
+import { Favourite } from './app/screens/favourite';
 export default function App(){
     const Stack = createNativeStackNavigator();
     return(
@@ -17,6 +18,7 @@ export default function App(){
                 <Stack.Screen name='track' component={Tracking}/>
                 <Stack.Screen name='cart' component={Cart}/>
                 <Stack.Screen name='check' component={Payment}/>
+                <Stack.Screen name='wish' component={Favourite}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
