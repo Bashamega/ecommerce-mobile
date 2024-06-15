@@ -6,8 +6,8 @@ export function Grid({navigation}:{navigation:any}) {
         <Scroll className="flex gap-5 my-5">
             {Array.from({ length: 50 }).map((_, index) => (
                 <Div className=" flex-row w-full gap-1 justify-evenly" key={index}>
-                    <Card id={index+1}/>
-                    <Card id={index + 2}/>
+                    <Card id={index+1} navigation={navigation}/>
+                    <Card id={index + 2} navigation={navigation}/>
                 </Div>
             ))}
         </Scroll>
