@@ -3,6 +3,7 @@ import { Nav } from "../components/Nav";
 import { Div, Scroll } from "../components/TailwindComponents";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Item } from "../components/Item";
+import { Button } from "../components/Btn";
 export function Favourite({ navigation }: { navigation: any }) {
     const insets = useSafeAreaInsets();
     return (
@@ -12,11 +13,12 @@ export function Favourite({ navigation }: { navigation: any }) {
         }}>
             <Scroll>
                 <Nav text="Favourite" navigation={navigation} />
-                <Div className=" p-10">
+                <Div className=" p-10 pb-[50px]">
                     <Item disabled={false} />
                     <Item disabled={false} />
                     <Item disabled={true} />
                     <Item disabled={false} />
+                    <Button title="Order Name" onPress={()=>{navigation?.navigate("cart")}}/>
                 </Div>
             </Scroll>
             <Menu navigation={navigation} active={2} />
