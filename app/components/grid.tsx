@@ -1,7 +1,7 @@
 import { Div, Scroll } from "./TailwindComponents";
 import { Card } from "./card";
 
-export function Grid() {
+export function Grid({navigate}:{navigate:any}) {
     return (
         <Scroll className="flex gap-5 my-5">
             {Array.from({ length: 50 }).map((_, index) => (

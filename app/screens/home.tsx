@@ -15,7 +15,7 @@ export function Home({ navigation }: { navigation: any }) {
 
             <Div className="p-5">
                 <Gal />
-                <Grid/>
+                <Grid navigate={navigation}/>
             </Div>
             <Menu active={1} navigation={navigation}/>
         </Div>
