@@ -13,7 +13,7 @@ export function Favourite({ navigation }: { navigation: any }) {
         }}>
             <Scroll>
                 <Nav text="Favourite" navigation={navigation} />
-                <Div className=" p-10 pb-[60px]">
+                <Div className=" p-10 ">
                     <Item disabled={false} />
                     <Item disabled={false} />
                     <Item disabled={true} />
