@@ -1,5 +1,5 @@
 import { Menu } from "../components/Menu";
-import { Div } from "../components/TailwindComponents";
+import { Div, Scroll } from "../components/TailwindComponents";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Filter } from "../components/filter";
 import { Gal } from "../components/gal";
@@ -13,10 +13,10 @@ export function Home({ navigation }: { navigation: any }) {
         }}>                
             <Filter />
 
-            <Div className="p-5">
+            <Scroll className="p-5 flex-1 overflow-hidden">
                 <Gal />
                 <Grid navigation={navigation}/>
-            </Div>
+            </Scroll>
             <Menu active={1} navigation={navigation}/>
         </Div>
     )

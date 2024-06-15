@@ -15,7 +15,7 @@ export function Settings({ navigation }: { navigation: any }) {
                     <FontAwesome name="moon-o" size={24} color="#F69F21" />
                 </Div>
                 <Div className=" flex gap-2 flex-row items-center">
-                    <Img source={require("../../assets/photo.jpeg")} className=" border border-white rounded-full w-20 h-20 " />
+                    <Img source={require("../../assets/photo.jpeg")} className=" border-2 border-white rounded-full w-20 h-20 " />
                     <Div className="w-2/5">
                         <P className=" text-white w-full">Cameron Willamson</P>
                         <P className="text-white text-[8px]">View Profile</P>

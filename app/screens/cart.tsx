@@ -7,7 +7,7 @@ import { FontAwesome5, FontAwesome, AntDesign } from '@expo/vector-icons';
 export function Cart({ navigation }: { navigation: any }) {
     const insets = useSafeAreaInsets();
     return (
-        <Div className="relative h-full w-screen bg-[#FFFBF5]" style={{
+        <Div className="relative h-full w-screen bg-[#FFFBF5] " style={{
             paddingTop: insets.top,
             paddingBottom: insets.bottom,
         }}>
