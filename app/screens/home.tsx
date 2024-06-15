@@ -4,7 +4,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Filter } from "../components/filter";
 import { Gal } from "../components/gal";
 import { Grid } from "../components/grid";
-export function Home() {
+export function Home({ navigation }: { navigation: any }) {
     const insets = useSafeAreaInsets();
     return (
         <Div className="relative h-full w-screen" style={{
@@ -17,7 +17,7 @@ export function Home() {
                 <Gal />
                 <Grid/>
             </Div>
-            <Menu active={1}/>
+            <Menu active={1} navigation={navigation}/>
         </Div>
     )
 }
