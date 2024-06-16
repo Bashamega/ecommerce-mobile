@@ -61,6 +61,9 @@ export function Details({ navigation }: { navigation: any }) {
               <AntiIcon name="right" size={30} color="gray" />
             </Div>
           </Div>
+          <Div className=" flex-row justify-end">
+            <P className="text-[#F69F21]">View size chart</P>
+          </Div>
         </Div>
       </Scroll>
     </Div>
