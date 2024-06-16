@@ -50,6 +50,17 @@ export function Details({ navigation }: { navigation: any }) {
               </Div>
             </Div>
           </Div>
+          <Div className=" flex-row items-center py-5 justify-between">
+            <P>Color</P>
+            <Div className="flex-row justify-center items-center space-x-2">
+              <Div className="h-8 w-8 rounded-full bg-[#FFE606]" />
+              <Div className="h-8 w-8 rounded-full bg-[#D130C1]" />
+              <Div className="h-14 w-14 rounded-full bg-[#66AE83] border border-[#F69F21]" />
+              <Div className="h-8 w-8 rounded-full bg-[#8C3838]" />
+              <Div className="h-8 w-8 rounded-full bg-[#EB903C]" />
+              <AntiIcon name="right" size={30} color="gray" />
+            </Div>
+          </Div>
         </Div>
       </Scroll>
     </Div>
