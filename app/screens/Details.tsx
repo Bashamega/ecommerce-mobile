@@ -64,6 +64,10 @@ export function Details({ navigation }: { navigation: any }) {
           <Div className=" flex-row justify-end">
             <P className="text-[#F69F21]">View size chart</P>
           </Div>
+          <Div className="flex-row  justify-between pt-2">
+            <P className=" w-2/3 text-center p-5 rounded-lg text-white font-bold bg-[#F69F21]">Buy now</P>
+            <AntiIcon name="shoppingcart" size={30} color={"#F69F21"} className="p-5 rounded-lg border border-[#F69F21] w-1/4"/>
+          </Div>
         </Div>
       </Scroll>
     </Div>
