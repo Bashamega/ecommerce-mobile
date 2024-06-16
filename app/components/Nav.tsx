@@ -19,7 +19,7 @@ export function Nav({
         name="chevron-back-outline"
         size={20}
       />
-      <P className={light ? "text-white" : "text-black"}>{text}</P>
+      <P className={light ? "text-white font-bold" : "text-black font-bold"}>{text}</P>
     </Div>
   );
 }
