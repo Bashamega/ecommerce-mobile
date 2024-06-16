@@ -66,7 +66,20 @@ export function Details({ navigation }: { navigation: any }) {
           </Div>
           <Div className="flex-row  justify-between pt-2">
             <P className=" w-2/3 text-center p-5 rounded-lg text-white font-bold bg-[#F69F21]">Buy now</P>
-            <AntiIcon name="shoppingcart" size={30} color={"#F69F21"} className="p-5 rounded-lg border border-[#F69F21] w-1/4"/>
+            <AntiIcon name="shoppingcart" size={30} color={"#F69F21"} className="p-5 rounded-lg border border-[#F69F21] w-1/4" />
+          </Div>
+          <Div className=" pt-5 pb-10">
+            <Div className="flex-row pb-2">
+              <P className=" font-bold border-b-2 border-[#F69F21] w-3/4">Details</P>
+              <P className=" font-bold border-b-2 border-black w-1/4 text-right">Reviews</P>
+            </Div>
+            <Div>
+              <P>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt 
+                <P className="font-bold  text-[#F69F21]"> Read More</P>
+              </P>
+              
+            </Div>
           </Div>
         </Div>
       </Scroll>
