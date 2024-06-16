@@ -2,6 +2,7 @@ import { Nav } from "../components/Nav";
 import { Div, Scroll, P, AntiIcon } from "../components/TailwindComponents";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Circle } from "../components/Gallery";
+import { Grid } from "../components/Grid";
 export function Details({ navigation }: { navigation: any }) {
   const insets = useSafeAreaInsets();
   return (
@@ -80,6 +81,13 @@ export function Details({ navigation }: { navigation: any }) {
               </P>
               
             </Div>
+          </Div>
+          <Div>
+            <Div className=" flex-row justify-between">
+              <P className="font-bols">Recommended Products</P>
+              <P className="text-[#F69F21]">View all</P>
+            </Div>
+            <Grid navigation={navigation}/>
           </Div>
         </Div>
       </Scroll>
