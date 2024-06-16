@@ -50,7 +50,6 @@ export function Cart({ navigation }: { navigation: any }) {
           onPress={() => {
             navigation?.navigate("check");
           }}
-          
         />
       </Div>
       <Menu navigation={navigation} active={4} />
