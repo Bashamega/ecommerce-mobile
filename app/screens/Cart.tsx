@@ -15,7 +15,7 @@ export function Cart({ navigation }: { navigation: any }) {
       }}
     >
       <Nav text="Checkout" navigation={navigation} />
-      <Div className="p-5">
+      <Div className="p-5 mb-14">
         <Div className=" flex-row mb-5  p-5 border border-[grey] rounded-2xl">
           <FontAwesome5 name="credit-card" size={30} color="grey" />
           <P className=" font-bold ml-2">Credit or Debit</P>
@@ -50,6 +50,7 @@ export function Cart({ navigation }: { navigation: any }) {
           onPress={() => {
             navigation?.navigate("check");
           }}
+          
         />
       </Div>
       <Menu navigation={navigation} active={4} />
