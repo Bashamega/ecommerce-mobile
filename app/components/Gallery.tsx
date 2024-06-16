@@ -1,6 +1,6 @@
 import { Div } from "./TailwindComponents";
 
-const Circle = ({ dark }: { dark?: boolean }) => (
+export const Circle = ({ dark }: { dark?: boolean }) => (
   <Div
     className={` ${dark ? "bg-[#F69F21] w-3 h-3" : "bg-[#F69F2173] w-2 h-2"} bg-opacity-50 rounded-full`}
   />
