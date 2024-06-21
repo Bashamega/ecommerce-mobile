@@ -21,6 +21,17 @@ export function Card({ id, navigation }: { id: number; navigation: any }) {
       onPress={() => {
         navigation?.navigate("details");
       }}
+      style={{
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 1,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 1.41,
+
+        elevation: 2,
+      }}
       className=" w-[143px] bg-[#FFFBF5] relative shadow rounded-lg  h-[220px] border border-[#F69F21] "
     >
       <Img source={imageSource} className="w-full h-[156px] rounded-lg" />
