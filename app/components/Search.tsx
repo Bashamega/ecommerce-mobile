@@ -7,7 +7,7 @@ export function Search() {
         placeholder="search"
         className=" w-3/4 border-r-[1.7px] border-[#DCDFE3]"
       />
-      <Feather name="search" size={24} color="black" />
+      <Feather name="search" size={24} color="gray" />
     </Div>
   );
 }
