@@ -1,4 +1,4 @@
-import { Div, Icon, Img, P, Touch } from "./TailwindComponents";
+import { Div, AntiIcon, Img, P, Touch } from "./TailwindComponents";
 import { AntDesign } from "@expo/vector-icons";
 export function Card({ id, navigation }: { id: number; navigation: any }) {
   const isDivisibleBy4 = id % 4 === 0;
@@ -21,12 +21,23 @@ export function Card({ id, navigation }: { id: number; navigation: any }) {
       onPress={() => {
         navigation?.navigate("details");
       }}
-      className=" w-[143px] bg-[#FFFBF5] relative shadow rounded-lg  h-[219px] border border-[#F69F21] "
+      style={{
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 1,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 1.41,
+
+        elevation: 2,
+      }}
+      className=" w-[143px] bg-[#FFFBF5] relative shadow rounded-lg  h-[220px] border border-[#F69F21] "
     >
-      <Img source={imageSource} className="w-full h-1/2 rounded-lg" />
-      <Icon
+      <Img source={imageSource} className="w-full h-[156px] rounded-lg" />
+      <AntiIcon
         size={10}
-        name="heart"
+        name="hearto"
         className="text-[#F69F21] absolute top-[10px] right-[10px]"
       />
       <Div className="p-2">
