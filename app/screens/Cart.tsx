@@ -1,9 +1,9 @@
 import { Menu } from "../components/Menu";
 import { Nav } from "../components/Nav";
-import { Div, Icon, P } from "../components/TailwindComponents";
+import { Div, P } from "../components/TailwindComponents";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Button } from "../components/Btn";
-import { FontAwesome5, FontAwesome, AntDesign } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 import { PaymentMethod } from "../components/Method";
 export function Cart({ navigation }: { navigation: any }) {
   const insets = useSafeAreaInsets();
