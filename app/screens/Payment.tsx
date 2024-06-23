@@ -33,11 +33,11 @@ export function Payment({ navigation }: { navigation: any }) {
             <P>Add New Card</P>
             <AntiIcon name="up" size={24} color="gray" />
           </Div>
-          <Input placeholder="Name On Card" />
-          <Input placeholder="Card Serial Number" />
+          <Input placeholder="Name On Card" className="border-b border-[#F69F219E]" />
+          <Input placeholder="Card Serial Number"  className="border-b border-[#F69F219E]"/>
           <Div className=" flex-row justify-between">
-            <Input placeholder="Expiring date" className="w-1/2" />
-            <Input placeholder="CCV" className="w-1/2" />
+            <Input placeholder="Expiring date" className="w-1/2 border-b border-[#F69F219E]" />
+            <Input placeholder="CCV" className="w-1/2 border-b border-[#F69F219E]" />
           </Div>
           <Div>
             <Button
