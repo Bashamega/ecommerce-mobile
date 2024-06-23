@@ -1,5 +1,5 @@
 import React from "react";
-import { TextInput, Text } from "react-native";
+import { TextInput } from "react-native";
 import { Div } from "./TailwindComponents";
 
 interface InputProps {
@@ -16,7 +16,7 @@ const Input: React.FC<InputProps> = ({
   secureTextEntry = false,
 }) => {
   return (
-    <Div className=" border-b-2 border-[#F69F219E]">
+    <Div className="">
       <TextInput
         placeholder={placeholder}
         value={value}
