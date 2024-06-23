@@ -4,17 +4,14 @@ export function Card({ id, navigation }: { id: number; navigation: any }) {
   const isDivisibleBy4 = id % 4 === 0;
   const isDivisibleBy3 = id % 3 === 0;
   const isDivisibleBy2 = id % 2 === 0;
-  let imageSource;
 
-  if (isDivisibleBy4) {
-    imageSource = require("../../assets/clothes/4.jpeg");
-  } else if (isDivisibleBy3) {
-    imageSource = require("../../assets/clothes/3.jpeg");
-  } else if (isDivisibleBy2) {
-    imageSource = require("../../assets/clothes/2.jpeg");
-  } else {
-    imageSource = require("../../assets/clothes/1.jpeg"); // Fallback image if not divisible by 4, 3, or 2
-  }
+  const images = {
+    1: require('../../assets/clothes/1.jpeg'),
+    2: require('../../assets/clothes/2.jpeg'),
+    3: require('../../assets/clothes/3.jpeg'),
+    4: require('../../assets/clothes/4.jpeg'),
+  };
+  const key = isDivisibleBy4 ? 4 : isDivisibleBy3 ? 3 : isDivisibleBy2 ? 2 : 1
   return (
     <Touch
       key={id}
@@ -34,7 +31,7 @@ export function Card({ id, navigation }: { id: number; navigation: any }) {
       }}
       className=" w-[143px] bg-[#FFFBF5] relative shadow rounded-lg  h-[220px] border border-[#F69F21] "
     >
-      <Img source={imageSource} className="w-full h-[156px] rounded-lg" />
+      <Img source={images[key]} className="w-full h-[156px] rounded-lg" />
       <AntiIcon
         size={10}
         name="hearto"
